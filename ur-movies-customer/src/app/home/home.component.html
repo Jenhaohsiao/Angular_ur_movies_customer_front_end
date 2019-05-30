@@ -1,12 +1,5 @@
-<ngb-carousel *ngIf="advertisingList">
-  <ng-template ngbSlide *ngFor="let item of advertisingList">
-    <div style="background-image: url('ß{{item.imageUrl}}'); " class="ad-image-section"> </div>
-    <!-- <img [src]="item.imageUrl" alt="Random first slide" class="ad-image-section"> -->
-    <div class="carousel-caption">
-      <h3>10 seconds between slides...</h3>
-      <p>This carousel uses customized default values.</p>
-    </div>
+<div class="container">
 
-  </ng-template>
+  <app-hero-advertising></app-hero-advertising>
 
-</ngb-carousel>
+</div>

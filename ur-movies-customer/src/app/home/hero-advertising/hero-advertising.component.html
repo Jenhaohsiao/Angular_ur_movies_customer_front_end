@@ -1,0 +1,13 @@
+<ngb-carousel *ngIf="advertisingList">
+  <ng-template ngbSlide *ngFor="let item of advertisingList">
+    <div [style.backgroundImage]="'url('+ item.imageUrl +')'" class="ad-image-section"></div>
+    <!-- <div style="background-image: url({{item.imageUrl}});" class="ad-image-section"> </div> -->
+    <!-- <img [src]="item.imageUrl" alt="Random first slide" class="ad-image-section"> -->
+    <div class="image-text-content">
+      <h3>{{item.title}}</h3>
+      <p>{{item.description}}</p>
+    </div>
+
+  </ng-template>
+
+</ngb-carousel>
